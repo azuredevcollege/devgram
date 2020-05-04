@@ -1,7 +1,7 @@
-**Goal:**
+## Goal:
 - The goal is to develop a social platform that allows users to upload pictures and videos and share them with the people around them.
  
-**Functional requirements:**
+### Functional requirements:
 - The user can register in the system via email or password
 - The user must confirm his account by clicking the activation link in the registration email
 - The user can log on to the system (e.g. IdentityServer, Azure Active Directory, KeyCloak) 
@@ -29,12 +29,13 @@
 
 **Functional Requirements from User's Perspective**
 
-<div style="text-align:center"><img src="./img/UserDevGramRequirements.png"/> </div>
+![Functional Requirements from User's Perspective](./images/UserDevGramRequirements.png)
 
 **Requirements for Data Throughput:**
 -  READ /GetImagesByGeo/… : 100 000 requests/second
 -  WRITE /PostContent, /PostCommentForContent: 10 000 requests/second
 
+### Domain Driven Design 
 We started using the Domain Driven Design approach:
 
 |Method Name|Method Description|
@@ -43,13 +44,14 @@ We started using the Domain Driven Design approach:
 
 **Content** 
 
-<div style="text-align:center"><img src="./img/CoreObjectContent.png"/> </div>
+![Core Object: Content](./images/CoreObjectContent.png)
 
 
 **User**
 
-<div style="text-align:center"><img src="./img/CoreObjectUser.png"/> </div>
+![Core Object: Content](./images/CoreObjectUser.png)
 
+### Architecture Design Patterns
 We want to evaluate for the PoC the CQRS approach, because it fosters to scale the write and read accesses differently. 
 
 |Pattern Name|Pattern Description|
@@ -84,13 +86,4 @@ The DomainOjects are persisted in CosmosDB Collections:
 
 // ToDO
 @4iter4life klärt wegen der Subcsription mit MW TI
-<<<<<<< HEAD
 
-=======
-@codeunicorn bereinigt Readme
-
-## POC share Content
-
-Architecture Overview:
-![POC share Content Architecture Overview](./images/poc-content.png)
->>>>>>> c854ca0945710be36ff354c1c7ab33015a22ff2c
