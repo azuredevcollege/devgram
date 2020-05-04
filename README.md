@@ -31,4 +31,4 @@ Die DomainOjects werden in CosmosDB Collections persistiert:
 ## POC share Content
 
 Architecture Overview:
-![POC share Content Architecture Overview](../images/poc-content.png)
+![POC share Content Architecture Overview](./images/poc-content.png)
