@@ -87,3 +87,8 @@ The DomainOjects are persisted in CosmosDB Collections:
 // ToDO
 @4iter4life klärt wegen der Subcsription mit MW TI
 
+### POC share Content
+
+Architecture Overview:
+![POC share Content Architecture Overview](./images/poc-content.png)
+
