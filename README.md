@@ -31,10 +31,6 @@
 
 ![Functional Requirements from User's Perspective](./images/UserDevGramRequirements.png)
 
-**Requirements for Data Throughput:**
--  READ /GetImagesByGeo/… : 100 000 requests/second
--  WRITE /PostContent, /PostCommentForContent: 10 000 requests/second
-
 ### Domain Driven Design 
 We started using the Domain Driven Design approach:
 
